@@ -154,8 +154,11 @@ function zodiaco(dia, mes) {
             signo = "Capricornio";
         }
     }
-
+    
+    alert("Tu signo del zodíaco es " + signo);
     return signo;
+    
+
 }
 
 function horoscopo(signo) {
@@ -163,13 +166,13 @@ function horoscopo(signo) {
     let horoscopo = "";
 
     if (signo === "Aries") {
-        horoscopo ="HOROSCOPO DE HOY:\n Iniciarás tu jornada a todo motor con muchas actividades planeadas para hoy. No te pases del límite.\nAMOR:\n Te será imposible no ceder ante la insistencia de tu pareja para pasar la jornada de hoy fuera del hogar. Disfrútala al máximo.\nRIQUEZA:\n Tendrás una jornada bastante tranquila a nivel laboral en el día de hoy. Aprovéchala para adelantar cuanto trabajo puedas.\nBIENESTAR:\n No caigas en el carpe diem a nivel económico o podrás llegar a tener graves consecuencias en un futuro cercano. Planifica en detalle.";
-    
+        horoscopo = "HOROSCOPO DE HOY:\n Iniciarás tu jornada a todo motor con muchas actividades planeadas para hoy. No te pases del límite.\nAMOR:\n Te será imposible no ceder ante la insistencia de tu pareja para pasar la jornada de hoy fuera del hogar. Disfrútala al máximo.\nRIQUEZA:\n Tendrás una jornada bastante tranquila a nivel laboral en el día de hoy. Aprovéchala para adelantar cuanto trabajo puedas.\nBIENESTAR:\n No caigas en el carpe diem a nivel económico o podrás llegar a tener graves consecuencias en un futuro cercano. Planifica en detalle.";
+
     } else if (signo === "Tauro") {
-        horoscopo ="HOROSCOPO DE HOY:\n La diosa de la fortuna te sonreirá el día de hoy. Muéstrate confiado a la hora de iniciar proyectos de toda índole en lo personal.\nAMOR:\n No busques perfección total a la hora de encontrar una pareja. Te será imposible llenar cada expectativa que tengas.\nRIQUEZA:\n Cuentas con las herramientas para sobresalir, pero el cansancio extremo y las frustraciones están opacando tu presencia.\nBIENESTAR:\n Tendrás una jornada llena de traspiés y dificultades. Esto te presentará un problema pues estás acostumbrado a lo fácil y a tener éxito siempre.";
+        horoscopo = "HOROSCOPO DE HOY:\n La diosa de la fortuna te sonreirá el día de hoy. Muéstrate confiado a la hora de iniciar proyectos de toda índole en lo personal.\nAMOR:\n No busques perfección total a la hora de encontrar una pareja. Te será imposible llenar cada expectativa que tengas.\nRIQUEZA:\n Cuentas con las herramientas para sobresalir, pero el cansancio extremo y las frustraciones están opacando tu presencia.\nBIENESTAR:\n Tendrás una jornada llena de traspiés y dificultades. Esto te presentará un problema pues estás acostumbrado a lo fácil y a tener éxito siempre.";
 
     } else if (signo === "Géminis") {
-        horoscopo ="HOROSCOPO DE HOY:\n El cambio de actitud frente a la vida puede servir para quitarte malestares de encima. Renuévate encontrando otro camino.\nAMOR:\n Estás pasando por un momento de soledad a punto de terminar. Prepárate con la mejor predisposición para conocer el amor.\nRIQUEZA:\n Sé realista en las metas que te impones, el no alcanzarlas provoca frustraciones innecesarias que pueden frenar tu desempeño.\nBIENESTAR:\n Tu resistencia natural te ayudará a luchar contra enfermedades y afecciones. Lograrás gozar de una salud sin altibajos y equilibrada.";
+        horoscopo = "HOROSCOPO DE HOY:\n El cambio de actitud frente a la vida puede servir para quitarte malestares de encima. Renuévate encontrando otro camino.\nAMOR:\n Estás pasando por un momento de soledad a punto de terminar. Prepárate con la mejor predisposición para conocer el amor.\nRIQUEZA:\n Sé realista en las metas que te impones, el no alcanzarlas provoca frustraciones innecesarias que pueden frenar tu desempeño.\nBIENESTAR:\n Tu resistencia natural te ayudará a luchar contra enfermedades y afecciones. Lograrás gozar de una salud sin altibajos y equilibrada.";
 
     } else if (signo === "Cáncer") {
         horoscopo = "HOROSCOPO DE HOY:\n Los reencuentros y los festejos entre parientes serán oportunos en este momento, donde no todo es color de rosa en el núcleo familiar.\nAMOR:\n El trabajo y la rutina están trayendo problemas en tu pareja, no permitas que esto pase. Acércate y demuéstrale tu amor.\nRIQUEZA:\n La adaptabilidad es una cualidad de gran importancia a la hora de nuevos emprendimientos. Sé proactivo al cambio.\nBIENESTAR:\n Busca el bienestar en las cosas simples de la vida. La familia, los amigos y los seres queridos te lo brindarán con el corazón y sin retaceos.";
@@ -201,12 +204,6 @@ function horoscopo(signo) {
     return horoscopo;
 }
 
-let dia = obtener_dia();
-let mes = obtener_mes();
-let signo = zodiaco(dia, mes);
-alert("Tu signo del zodíaco es " + zodiaco(dia, mes));
-
-
 function obtener_horoscopo(signo) {
 
     let recibir_horoscopo = "";
@@ -226,6 +223,10 @@ function obtener_horoscopo(signo) {
 
     }
 }
+
+let dia = obtener_dia();
+let mes = obtener_mes();
+let signo = zodiaco(dia, mes);
 
 obtener_horoscopo(signo);
 
