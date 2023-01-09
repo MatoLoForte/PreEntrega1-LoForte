@@ -2,8 +2,8 @@ function obtener_dia() {
 
     let dia = 0;
 
-    while (dia === 0) {
-        dia = prompt("Ingresa tu día de Nacimiento en número");
+    while (dia == 0) {
+        dia = Number(prompt("Ingresa tu día de Nacimiento en número"));
 
         if (dia > 0 && dia < 31) {
 
@@ -26,7 +26,7 @@ function obtener_mes() {
 
     let mes = 0;
 
-    while (mes === 0) {
+    while (mes == 0) {
         mes = Number(prompt("Ingresa el número de tu mes de nacimiento"));
 
         switch (mes) {
@@ -154,7 +154,7 @@ function zodiaco(dia, mes) {
             signo = "Capricornio";
         }
     }
-    
+
     alert("Tu signo del zodíaco es " + signo);
     return signo;
     
